@@ -1,0 +1,74 @@
+$yellow: #fff200;
+$orange:  rgb(230,93,37);
+
+*{
+  margin:0; padding:0;
+  box-sizing: border-box;
+  font-family: 'Exo2', sans-serif;
+  text-transform: all .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+
+
+#header{
+  width:100%;
+  position:fixed;
+  top: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  z-index: 1000;
+}
+
+.fa-shopping-basket{
+  font-size:4rem;
+  z-index:1000;
+  color:$orange;
+  cursor: pointer;
+  display: none;
+}
+
+
+.logo{
+  img{
+    height: 5rem;
+  }
+}
+
+nav{
+  ul{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;list-style: none;
+
+    li{
+      margin-right: 4rem;
+
+      a{
+        color:$orange;
+        font-size: 2rem;
+        text-decoration: none;
+
+        &:hover{
+          color:$yellow;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+#home{
+  background: linear-gradient(0deg, rgb(219,220,219),rgb(219,220,219));
+  min-height: 100vh;
+}
